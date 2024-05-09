@@ -1,13 +1,9 @@
 <script setup>
-//import unisData from '@/assets/us/Unis.json';
-import PlansCard from '@/components/PlansCard.vue';
-import { Icon } from '@iconify/vue';
-import { RouterLink } from 'vue-router';
-
+import { Icon } from '@iconify/vue'
+import AboutCard from '@/components/AboutCard.vue'
 </script>
-
 <template>
-  <header class=" bg-lightBlue-30 px-8 py-5">
+    <header class=" bg-lightBlue-30 px-8 py-5">
     <div class="header-container flex items-center justify-between">
       <div class="logo-title flex items-center gap-4">
         <img src="/Vector.png" alt="Logo" class="logo">
@@ -25,49 +21,22 @@ import { RouterLink } from 'vue-router';
         <router-link to="/login"> 
           <button class="btn-login bg-lightBlue-default hover:bg-lightBlue-30 text-white hover:text-blue-500 active:bg-white px-4 py-2 rounded-md">Login</button>
         </router-link>
-        <router-link to="/signup">
+        <router-link to="/signup ">
           <button class="btn-signup bg-lightBlue-default hover:bg-lightBlue-30 text-white hover:text-blue-500 active:bg-white px-4 py-2 rounded-md">Sign Up</button>
         </router-link>
       </div>
     </div>
   </header>
-  <div class="card-container flex items-center justify-around py-8">
-    <div class="card-text text-lightGrey flex flex-col gap-5">
-      <h3 class=" font-semibold text-5xl">Flashcards hechas a tu medida: <p class="text-lightLila">Crea y aprende de manera eficaz</p></h3>
-      <p>Regístrate para empezar ahora mismo.</p>
-      <router-link to="/signup">
-        <button class="register-button bg-blueBlue text-white hover:text-white hover:bg-lightBlue-default active:text-blueBlue active:font-extrabold active:bg-white px-4 py-2 rounded-xl text-sm font-medium w-fit">Regístrate</button>
-      </router-link>
-    </div>
-    <img src="/monochrome_plastic_cards.png" alt="Tarjeta" class="card-image h-auto max-w-screen-sm max-h-screen-sm">
+  <div class="hiper-title h-96 bg-blue-700 flex items-center justify-center text-white">
+    <h1 class=" font-sans font-extrabold text-9xl" >Mind Cards</h1>
   </div>
-  <div class="clientes-container font-sans text-lightGrey flex flex-col items-center justify-center ">
-    <h3 class=" font-semibold text-3xl ">Nuestros Clientes</h3>
-    <span>Estudiantes de distintos Colegios, Universidades e Instituciones</span>
-    <div class="img-u-container flex items-center gap-20 ">
-      <!-- <div v-for="universidad in unisData" :key="universidad.id">
-        <img :src="universidad.imgsrc" :alt="universidad.name">
-      </div> --> 
-      <img src="../assets/images/emi.png" alt="emi">
-      <img src="../assets/images/cato.png" alt="emi">
-      <img src="../assets/images/univalle.png" alt="emi">
-      <img src="../assets/images/unifranz.png" alt="emi">
-      <img src="../assets/images/chupea.png" alt="emi">
-    </div>
-  </div>
-  <div class="plans-container flex py-20 justify-around">
-
-    <router-link to="/plans">
-      <PlansCard changeIcon="ph:cards-fill"/>
-    </router-link>
-    <router-link to="/plans">
-      <PlansCard changeIcon="fluent:premium-28-regular" titlePlan="Mind Cards Premium" pPlan="Las personas con este plan serán capaces de acceder a contenido como insertar imagenes" />
-    </router-link>
-    <router-link to="/plans">
-      <PlansCard changeIcon="material-symbols:school-outline" titlePlan="Mind Cards School" pPlan="Estudiantes con este plan podrán tener beneficios de contenido de insertar imagenes y rellenar espacios"/>
-    </router-link>
-    
-  </div>
+  <div class="about-container">
+    <AboutCard/>
+    <AboutCard/>
+    <AboutCard/>
+    <AboutCard/>
+    <AboutCard/>
+  </div> 
   <footer class=" bg-lightBlue-default p-20">
     <div class="social-container flex items-center justify-around">
       <div class="title-container flex items-center gap-5">
@@ -90,7 +59,3 @@ import { RouterLink } from 'vue-router';
   </footer>
 
 </template>
-
-
-
-

@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "imgsrc": "../assets/images/emi.png",
+        "name": "EMI"
+    },
+    {
+        "id": 2,
+        "imgsrc": "../assets/images/cato.png",
+        "name": "cato"
+    },
+    {
+        "id": 3,
+        "imgsrc": "../assets/images/univalle.png",
+        "name": "univalle"
+    },
+    {
+        "id": 4,
+        "imgsrc": "../assets/images/unifranz.png",
+        "name": "unifranz"
+    },
+    {
+        "id": 5,
+        "imgsrc": "../assets/images/chupea.png",
+        "name": "upa"
+    }
+]

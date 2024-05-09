@@ -41,9 +41,9 @@ switch (inputType) {
 
 
 <template>
-    <div class = "block-container">
-        <span class = "title-user-container">{{ props.titleBlock }}</span>
-        <div class="fill-container">
+    <div class = "block-container flex flex-col gap-1 text-white">
+        <span class = "title-user-container font-sans font-semibold text-2xl">{{ props.titleBlock }}</span>
+        <div class="fill-container flex items-center gap-3">
             <Icon :icon= "props.changeIcon" width="26" height="26" style="color: #ffffff" />
             <input :type="typeInput" :id= "inputId" :name = "inputName" :placeholder="inputPlaceholder" class = "input-style">
         </div>
@@ -53,16 +53,6 @@ switch (inputType) {
 
 <style scoped>
 
-.block-container{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    color: #ffffff;
-}
-.title-user-container{
-    font-size: 23px;
-    font-weight: 700;
-}
 .input-style{
     background-color: transparent;
     margin: 0;
@@ -73,12 +63,7 @@ switch (inputType) {
     width: 40vh;
     outline: none;
 }
-.fill-container{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
-}
+
 .input-style::placeholder {
     color: #ffffff;
     opacity: 0.5;

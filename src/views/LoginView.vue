@@ -4,25 +4,33 @@ import ButtonSession from '@/components/ButtonSession.vue'
 </script>
 
 <template>
-    <div class="login-container">
-        <div class="text-login-container">
-            <h1 class= "title-welcome">Bienvenido!!</h1>
-            <UserBlock changeIcon = "lets-icons:message" titleBlock = "Usuario o Email" typeInput = "email"/>
-            <div class="remember-and-pass">
+    <div class="login-container bg-blue-500 flex justify-evenly items-center h-screen font-sans">
+        <div class="text-login-container gap-10 items-center flex flex-col">
+            <h1 class= "title-welcome font-sans text-white text-7xl font-extrabold ">Bienvenido!!</h1>
+            <div class="remember-and-pass flex gap-2.5 text-white text-xs items-start flex-col">
+                <UserBlock changeIcon = "lets-icons:message" titleBlock = "Usuario o Email" typeInput = "email"/>
                 <UserBlock changeIcon = "ic:outline-lock" titleBlock = "Contraseña" typeInput = "password"/>
-                <div class="question-password-container" >
-                    <label for="remember" class="remember-box">
-                        <input  class="remember-checkbox" type="checkbox" id="remember" name="remember">
+                <div class="question-password-container flex justify-between w-96" >
+                    <label for="remember" class="remember-box gap-2.5 items-center flex text-sm justify-evenly">
+                        <input  class="remember-checkbox w-4 h-4 mr-2" type="checkbox" id="remember" name="remember">
                         Recuerdame
                     </label> 
-                    <a href="#forgot" class = "forgot-password">¿Olvidaste la Contraseña?</a>
+                    <router-link to="/">
+                        <a href="#forgot" class = "forgot-password ">¿Olvidaste la Contraseña?</a>
+                    </router-link>
+                    
                 </div>
             </div>
-            <ButtonSession buttonText = "Login" />
-            <ButtonSession buttonText = "Log In with Google" googleIcon="flat-color-icons:google"/>
+            <div class="flex flex-col gap-5">            
+                <ButtonSession buttonText = "Login" />
+                <ButtonSession buttonText = "Log In with Google" googleIcon="flat-color-icons:google"/>
+            </div>
             <div class="transition-sign-container">
                 <span class = "span-question-account">¿No tiene una Cuenta?</span>
-                <a href="#signup" class = "forgot-password">Sign up</a>
+                <router-link to="/signup">
+                    <a href="#signup" class = "forgot-password">Sign up</a>
+                </router-link>
+                
             </div>
         </div>
         <div class="image-one-container">
@@ -36,45 +44,6 @@ import ButtonSession from '@/components/ButtonSession.vue'
 
 <style scoped>
 
-.login-container{
-    background: #699BF7;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    height: 100vh;
-}
-.text-login-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-.title-welcome{
-    color: #ffffff;
-    font-size: 50px;
-    margin: 30px 0px 30px 0px;
-}
-.question-password-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 55vh;
-}
-.remember-box{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    color: #ffffff;
-    font-size: 15px;
-}
-.remember-checkbox{
-    width: 20px;
-    height: 20px;
-}
-
 .forgot-password{
     color: #053AF8;
     font-size: 15px;
@@ -84,11 +53,7 @@ import ButtonSession from '@/components/ButtonSession.vue'
 .forgot-password:hover{
     text-decoration: underline;
 }
-.remember-and-pass{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-}
+
 .transition-sign-container{
     display: flex;
     align-items: center;
