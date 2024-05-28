@@ -1,6 +1,9 @@
 <script setup>
 //import unisData from '@/assets/us/Unis.json';
+// import ButtonSession from '@/components/ButtonSession.vue';
+import AboutCard from '@/components/AboutCard.vue';
 import PlansCard from '@/components/PlansCard.vue';
+import PublicCards from '@/components/PublicCards.vue';
 import { Icon } from '@iconify/vue';
 import { RouterLink } from 'vue-router';
 
@@ -17,9 +20,9 @@ import { RouterLink } from 'vue-router';
         <!-- Aquí puedes agregar elementos de navegación comunes, como links a otras páginas -->
         <router-link to="/" class=" text-darkBlue hover:text-blue-600 ">Inicio</router-link>
         <router-link to="/about" class=" text-darkBlue hover:text-blue-600">Acerca de</router-link>
-        <router-link to="/contact" class=" text-darkBlue hover:text-blue-600">¿Cómo funciona?</router-link>
+        <router-link to="/howworks" class=" text-darkBlue hover:text-blue-600">¿Cómo funciona?</router-link>
         <router-link to="/plans" class=" text-darkBlue hover:text-blue-600">Planes</router-link>
-        <router-link to="/contact" class=" text-darkBlue hover:text-blue-600">Flash Card Públicas</router-link>
+        <router-link to="/public" class=" text-darkBlue hover:text-blue-600">Flash Card Públicas</router-link>
       </div>
       <div class="buttons flex gap-3.5 font-medium">
         <router-link to="/login"> 
@@ -55,7 +58,7 @@ import { RouterLink } from 'vue-router';
       <img src="../assets/images/chupea.png" alt="emi">
     </div>
   </div>
-  <div class="plans-container flex py-20 justify-around">
+  <div class="plans-container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-20 justify-items-center gap-10">
 
     <router-link to="/plans">
       <PlansCard changeIcon="ph:cards-fill"/>
@@ -68,6 +71,34 @@ import { RouterLink } from 'vue-router';
     </router-link>
     
   </div>
+
+  
+
+  <div class="info-extra-one">
+    <AboutCard iconChange = "game-icons:three-friends"  titleAbout = "Comparte con tu Compañeros" pText = "Compartir con los compañeros es una función esencial en muchas aplicaciones modernas, diseñada para facilitar la colaboración y la comunicación dentro de un grupo, ya sea en un entorno académico, profesional o social. Esta función permite a los usuarios enviar y recibir información, documentos, enlaces y otros recursos de manera eficiente y organizada."  />
+  </div>
+
+  <div class="title p-10 space-y-4 text-center">
+    <h1 class="font-extrabold text-4xl text-lightGrey">Flash Cards Publicas</h1>
+    <p class=" font-normal text-1xl text-lightGrey">Personaliza tus Flash Cards y diseñalas a tu gusto para una mayor libertad</p>
+  </div>
+
+  <div class=" p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10">
+    <PublicCards/>
+    <PublicCards person="Jose"/>
+    <PublicCards person="Jose"/>
+    
+  </div>
+
+  <div class="invitation flex flex-col items-center justify-center gap-10 p-10">
+    <h1 class=" font-extrabold text-center text-6xl text-lightGrey">¿Qué estas esperando? <br> Se parte de Mind Cards</h1>
+    <router-link to="/signup">
+      <button class="register-button bg-blueBlue text-white hover:text-white hover:bg-lightBlue-default active:text-blueBlue active:font-extrabold active:bg-white px-4 py-2 rounded-xl text-sm font-medium w-fit">
+        Prueba con Confianza!!! ->
+      </button>
+    </router-link>
+  </div>
+
   <footer class=" bg-lightBlue-default p-20">
     <div class="social-container flex items-center justify-around">
       <div class="title-container flex items-center gap-5">

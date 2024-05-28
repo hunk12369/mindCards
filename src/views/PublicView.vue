@@ -1,10 +1,10 @@
 <script setup>
-import { Icon } from '@iconify/vue'
-import AboutCard from '@/components/AboutCard.vue'
-
+    import { Icon } from '@iconify/vue';
+    import PublicCards from '@/components/PublicCards.vue'
 </script>
+
 <template>
-    <header class=" bg-lightBlue-30 px-8 py-5">
+      <header class=" bg-lightBlue-30 px-8 py-5">
     <div class="header-container flex items-center justify-between">
       <div class="logo-title flex items-center gap-4">
         <img src="/Vector.png" alt="Logo" class="logo">
@@ -28,18 +28,17 @@ import AboutCard from '@/components/AboutCard.vue'
       </div>
     </div>
   </header>
-  <div class="hiper-title h-96 bg-blue-700 flex items-center justify-center text-white">
-    <h1 class=" font-sans font-extrabold text-9xl" >Mind Cards</h1>
+  <div class="title p-10 space-y-4">
+    <h1 class="font-extrabold text-4xl text-lightGrey">Flash Cards Publicas</h1>
+    <p class=" font-normal text-1xl text-lightGrey">Te presentamos todas las opciones de nuestros usuarios que hicieron públicas sus creaciones</p>
   </div>
-  <div class="about-container">
-    <AboutCard/>
-    <AboutCard iconChange = "mingcute:walk-fill" titleAbout="Visión y Misión" pText = "La visión de facilitar y mejorar el proceso de aprendizaje a través de herramientas interactivas y personalizadas. Nuestra misión es empoderar a estudiantes y profesionales para que puedan dominar nuevos conceptos y materias de manera efectiva y divertida."/>
-    <AboutCard iconChange = "solar:user-hand-up-bold" titleAbout="Características Principales"  pText = "Nuestra aplicación de flashcards se destaca por su capacidad para permitir a los usuarios crear tarjetas de estudio altamente personalizadas y compartirlas con otros. Desde integración de imagenes hasta algoritmos inteligentes de estudio, ofrecemos una experiencia única y efectiva de aprendizaje."/>
-    <AboutCard iconChange = "ant-design:team-outlined" titleAbout="Equipo y Fundadores" pText = "En Mind Cards, contamos con un equipo apasionado de desarrolladores y educadores comprometidos con la innovación educativa. Fundada por Janna Gonzales y Kevin Morales, nuestra empresa está impulsada por el deseo de mejorar continuamente la forma en que aprendemos y memorizamos."/>
-    <AboutCard iconChange = "solar:star-bold-duotone" titleAbout="Valores y Filosofía" pText = "En Mind Cards, contamos con un equipo apasionado de desarrolladores y educadores comprometidos con la innovación educativa. Fundada por Janna Gonzales y Kevin Morales, nuestra empresa está impulsada por el deseo de mejorar continuamente la forma en que aprendemos y memorizamos."/>
-    <AboutCard iconChange = "ph:student" titleAbout="Clientes o Usuarios Destacados" pText = "Hemos tenido el privilegio de servir a una comunidad diversa de estudiantes que confían en nuestra aplicación para mejorar su rendimiento académico y profesional."/>
-  </div> 
-  
+  <div class=" p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10">
+    <PublicCards/>
+    <PublicCards person="Jose"/>
+    <PublicCards person="Jose"/>
+    <PublicCards person="Jose"/>
+    <PublicCards person="Jose"/>
+  </div>
   <footer class=" bg-lightBlue-default p-20">
     <div class="social-container flex items-center justify-around">
       <div class="title-container flex items-center gap-5">
@@ -60,5 +59,4 @@ import AboutCard from '@/components/AboutCard.vue'
     </div>
     
   </footer>
-
 </template>

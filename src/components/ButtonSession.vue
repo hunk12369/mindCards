@@ -16,7 +16,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <button class="btn-session-container flex font-sans font-semibold w-96">
+    <button class="btn-session-container flex font-sans font-extrabold w-96 gap-2 ">
         <Icon :icon = "googleIcon" width="20" height="20" />
         {{ props.buttonText }}
     </button>

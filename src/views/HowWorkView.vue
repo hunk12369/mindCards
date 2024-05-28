@@ -1,10 +1,9 @@
 <script setup>
-import { Icon } from '@iconify/vue'
-import AboutCard from '@/components/AboutCard.vue'
-
+    import { Icon } from '@iconify/vue';
 </script>
+
 <template>
-    <header class=" bg-lightBlue-30 px-8 py-5">
+      <header class=" bg-lightBlue-30 px-8 py-5">
     <div class="header-container flex items-center justify-between">
       <div class="logo-title flex items-center gap-4">
         <img src="/Vector.png" alt="Logo" class="logo">
@@ -28,18 +27,44 @@ import AboutCard from '@/components/AboutCard.vue'
       </div>
     </div>
   </header>
-  <div class="hiper-title h-96 bg-blue-700 flex items-center justify-center text-white">
-    <h1 class=" font-sans font-extrabold text-9xl" >Mind Cards</h1>
+  <div class="flex flex-col items-center justify-center space-y-10 p-20">
+    <h1 class=" font-black text-5xl text-center p-6 rounded-xl text-lightLila items-center justify-center">Existen 4 típos de Flash Cards que pueden ser Personalizadas</h1>
+    <ul class=" list-decimal space-y-10 font-black text-lightGrey ">
+      <li class=" font-medium text-2xl space-y-8">
+        <h1 class=" font-extrabold text-3xl ">Flash Card Básica</h1>
+        <ul >
+          <li>
+            Es exclusivamente texto, donde tanto como adelante y atrás podrás poner el texto que quieras dependiendo tus necesidades.
+          </li>
+        </ul>
+      </li>
+      <li class=" font-medium text-2xl space-y-8">
+        <h1 class=" font-extrabold text-3xl ">Flash Card Imagen</h1>
+        <ul >
+          <li>
+            Esta Opción te brinda la opción de poder poner imagenes en las Flash Cards, donde podras rellenar a tu gusto como quieres poner las imagenes y que partes quieres identificar.
+          </li>
+        </ul>
+      </li>
+      <li class=" font-medium text-2xl space-y-8">
+        <h1 class=" font-extrabold text-3xl ">Flash Card Audio</h1>
+        <ul>
+          <li>
+            Podrás grabar audio donde podrás usarlo al igual que una basíca.
+          </li>
+        </ul>
+      </li>
+      <li class=" font-medium text-2xl space-y-8">
+        <h1 class=" font-extrabold text-3xl ">Flash Card Relleno</h1>
+        <ul>
+          <li>
+            Podrás rellenar campos vacios de un texto con el fin de memorizar definciones necesarias.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
   </div>
-  <div class="about-container">
-    <AboutCard/>
-    <AboutCard iconChange = "mingcute:walk-fill" titleAbout="Visión y Misión" pText = "La visión de facilitar y mejorar el proceso de aprendizaje a través de herramientas interactivas y personalizadas. Nuestra misión es empoderar a estudiantes y profesionales para que puedan dominar nuevos conceptos y materias de manera efectiva y divertida."/>
-    <AboutCard iconChange = "solar:user-hand-up-bold" titleAbout="Características Principales"  pText = "Nuestra aplicación de flashcards se destaca por su capacidad para permitir a los usuarios crear tarjetas de estudio altamente personalizadas y compartirlas con otros. Desde integración de imagenes hasta algoritmos inteligentes de estudio, ofrecemos una experiencia única y efectiva de aprendizaje."/>
-    <AboutCard iconChange = "ant-design:team-outlined" titleAbout="Equipo y Fundadores" pText = "En Mind Cards, contamos con un equipo apasionado de desarrolladores y educadores comprometidos con la innovación educativa. Fundada por Janna Gonzales y Kevin Morales, nuestra empresa está impulsada por el deseo de mejorar continuamente la forma en que aprendemos y memorizamos."/>
-    <AboutCard iconChange = "solar:star-bold-duotone" titleAbout="Valores y Filosofía" pText = "En Mind Cards, contamos con un equipo apasionado de desarrolladores y educadores comprometidos con la innovación educativa. Fundada por Janna Gonzales y Kevin Morales, nuestra empresa está impulsada por el deseo de mejorar continuamente la forma en que aprendemos y memorizamos."/>
-    <AboutCard iconChange = "ph:student" titleAbout="Clientes o Usuarios Destacados" pText = "Hemos tenido el privilegio de servir a una comunidad diversa de estudiantes que confían en nuestra aplicación para mejorar su rendimiento académico y profesional."/>
-  </div> 
-  
   <footer class=" bg-lightBlue-default p-20">
     <div class="social-container flex items-center justify-around">
       <div class="title-container flex items-center gap-5">
@@ -60,5 +85,4 @@ import AboutCard from '@/components/AboutCard.vue'
     </div>
     
   </footer>
-
 </template>

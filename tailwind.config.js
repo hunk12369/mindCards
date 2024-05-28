@@ -19,6 +19,25 @@ module.exports = {
         lightGrey: '#4D4D4D',
         lightLila: '#516AF1',
         plansblue: '#2361BF',
+        yellowa: '#E4C647',
+        greyNew: '#8A8F9D',
+        bluetwo: '#0059FE',
+        greyl: '#F6F8F9',
+        otrogrey: {
+          default: '#4D4D4D',
+          '30': '#4D4D4D2D',
+
+        },
+        whiteGrey: '#F5F7FA',
+      },
+      fontSize: {
+        '14px': '14px',
+        '24px': '24px',
+        '20px': '20px',
+      },
+      spacing: {
+        'medida': '75px',
+        
       },
     },
   },

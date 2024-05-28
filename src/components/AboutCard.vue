@@ -17,17 +17,17 @@ const props = defineProps({
         type: String,
         default: 'ic:outline-history'
     }
-
+    
 })
 
 </script>
 
 <template>
-    <div class="about-container flex items-center justify-evenly font-sans">
+    <div class="about-container flex items-center justify-center font-sans gap-20">
         <Icon :icon = "props.iconChange" width="300" height="300" style="color: #699BF7"/>
         <div class="text-about-container flex flex-col w-96 gap-2 text-lightGrey">
             <h1 class=" text-darkBlue font-semibold text-4xl text-end" >{{ props.titleAbout }}</h1>
-            <p class=" text-lightGrey font-normal text-end" >{{ props.pText }}</p>  
+            <p class=" text-lightGrey font-normal text-justify" >{{ props.pText }}</p>  
         </div>
     </div>
 </template>
