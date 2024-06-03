@@ -29,11 +29,18 @@ module.exports = {
 
         },
         whiteGrey: '#F5F7FA',
+        btnBlue: '#0177FB',
+        navGrey: '#6E7C87',
+        purpleP: '#7B61FF',
       },
       fontSize: {
+        '12px': '12px',
         '14px': '14px',
         '24px': '24px',
         '20px': '20px',
+        '36px': '36px',
+        '32px': '32px',
+        '30px': '30px',
       },
       spacing: {
         'medida': '75px',

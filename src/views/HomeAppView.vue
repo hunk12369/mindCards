@@ -8,7 +8,7 @@ import NavBar from '@/components/NavBar.vue'
 <template>
     <div class="home-container">
         <HeaderMaster/>
-        <div class="a ml-72 mt-24 right-80">
+        <div class="a ml-72 mt-24 pr-6">
             <p>Esta es la pagina de INICIO</p>
         </div>
         <NavBar/>

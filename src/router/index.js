@@ -12,7 +12,11 @@ import DecksView from '@/views/DecksView.vue'
 import StadisticsView from '@/views/StadisticsView.vue'
 import HelpView from '@/views/HelpView.vue'
 import SettingsView from '@/views/SettingsView.vue'
-
+import ProfileView from '@/views/ProfileView.vue'
+import DeckDetailsView from '@/views/DeckDetailsView.vue'
+import CreateDeckView from '@/views/CreateDeckView.vue';
+import EditDeckView from '@/views/EditDeckView.vue';
+import StudyDeckView from '@/views/StudyDeckView.vue';
 
 
 const routes = [
@@ -28,6 +32,11 @@ const routes = [
   { path: '/login/stadistics', name: 'StadisticsView', component: StadisticsView },
   { path: '/login/help', name: 'HelpView', component: HelpView },
   { path: '/login/settings', name: 'SettingsView', component: SettingsView },
+  { path: '/login/profile', name: 'ProfileView', component: ProfileView },
+  { path: '/login/decks/:id', name: 'DeckDetailsView', component: DeckDetailsView },
+  { path: '/login/decks/:id/create', name: 'CreateDeckView', component: CreateDeckView },
+  { path: '/login/decks/:id/edit', name: 'EditDeckView', component: EditDeckView },
+  { path: '/login/decks/:id/study', name: 'StudyDeckView', component: StudyDeckView },
 
 ]
 

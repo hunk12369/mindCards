@@ -6,7 +6,7 @@ import NavCards from '@/components/NavCards.vue'
 </script>
 
 <template>
-    <div class="navbar-container items-start p-8 space-y-6 border-r fixed top-medida bottom-0 mt-0 bg-white">
+    <div class="navbar-container items-start p-8 space-y-6 border-r fixed top-medida bottom-0 mt-0 bg-white ">
         <div class="title-container flex items-center">
             <Icon icon="mdi:human-welcome" width="45" height="45"  style="color: #E4C647" />
             <h1 class=" text-yellowa font-extrabold text-24px">Bienvenido!!!</h1>
