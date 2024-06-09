@@ -17,7 +17,10 @@ import DeckDetailsView from '@/views/DeckDetailsView.vue'
 import CreateDeckView from '@/views/CreateDeckView.vue';
 import EditDeckView from '@/views/EditDeckView.vue';
 import StudyDeckView from '@/views/StudyDeckView.vue';
-
+/* import BasicEditor from '@/components/BasicEditor.vue';
+import ImagenEditor from '@/components/ImagenEditor.vue';
+import AudioEditor from '@/components/AudioEditor.vue';
+import FillEditor from '@/components/FillEditor.vue' */
 
 const routes = [
   { path: '/', name: 'HomePage', component: HomePage },
@@ -37,6 +40,10 @@ const routes = [
   { path: '/login/decks/:id/create', name: 'CreateDeckView', component: CreateDeckView },
   { path: '/login/decks/:id/edit', name: 'EditDeckView', component: EditDeckView },
   { path: '/login/decks/:id/study', name: 'StudyDeckView', component: StudyDeckView },
+  // { path: '/login/decks/:id/create/basic', name: 'BasicEditor', component: BasicEditor },
+  // { path: '/login/decks/:id/create/imagen', name: 'ImagenEditor', component: ImagenEditor },
+  // { path: '/login/decks/:id/create/audio', name: 'AudioEditor', component: AudioEditor },
+  // { path: '/login/decks/:id/create/fill', name: 'FillEditor', component: FillEditor },
 
 ]
 
