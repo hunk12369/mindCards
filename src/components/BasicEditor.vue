@@ -5,6 +5,7 @@ import StarterKit from "@tiptap/starter-kit";
 import TextStyle from "@tiptap/extension-text-style";
 import FontFamily from "@/extensions/FontFamily";
 import TextAlign from "@tiptap/extension-text-align";
+import Placeholder from '@tiptap/extension-placeholder'
 import { Color } from "@tiptap/extension-color";
 import { Icon } from "@iconify/vue";
 
@@ -22,6 +23,9 @@ const front = useEditor({
     FontFamily,
     Color,
     TextAlign.configure({ types: ["heading", "paragraph"] }),
+    Placeholder.configure({
+      placeholder: 'Escribe algo...',
+    }),
   ],
 });
 
