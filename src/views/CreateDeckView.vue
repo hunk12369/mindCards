@@ -95,14 +95,29 @@ const getEditorComponent = (type) => {
         <span class="font-bold">Crear Flash Cards</span>
       </div>
       <div class="flex items-center p-2 gap-7">
-        <h1 class="font-bold md:text-32px sm:text-24px">Crear Flash Cards: </h1>
+        <h1 class="font-bold md:text-32px sm:text-24px">Crear Flash Cards:</h1>
         <span class="font-black md:text-32px sm:text-24px text-navGrey">{{
           deck.title
         }}</span>
       </div>
-        <ToggleEditor @selectType="handleSelectType" class="ml-4"/>
+      <div class="a flex gap-10">
+        <!--tipo de editor-->
+        <ToggleEditor @selectType="handleSelectType" class="ml-4" />
+        <!--nombre de flashcard-->
+        <input
+          type="text"
+          placeholder="Nombre de la Flash Card"
+          class="outline-none block w-full border rounded-lg py-2 px-7 text-14px placeholder:text-gray-500 focus:ring-1 focus:ring-purpleP mr-4"
+        />
+      </div>
       <div class="nuse flex flex-col">
         <component :is="getEditorComponent(selectedEditor)" />
+      </div>
+      <div class="  pb-8 flex items-center justify-center">
+        <!--guardar contenido del flashcard-->
+        <button class=" border hover:bg-white hover:border-purpleP rounded-md hover:text-purpleP py-3 px-3 bg-purpleP text-white font-medium active:border-lightGrey active:text-lightGrey">
+          Guardar
+        </button>
       </div>
     </div>
     <NavBar />

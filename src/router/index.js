@@ -7,11 +7,11 @@ import AboutView from '@/views/AboutView.vue'
 import HowWorkView from '@/views/HowWorkView.vue'
 import PlansView from '@/views/PlansView.vue'
 import PublicView from '@/views/PublicView.vue'
-import HomeAppView from '@/views/HomeAppView.vue'
+// import HomeAppView from '@/views/HomeAppView.vue'
 import DecksView from '@/views/DecksView.vue'
 import StadisticsView from '@/views/StadisticsView.vue'
 import HelpView from '@/views/HelpView.vue'
-import SettingsView from '@/views/SettingsView.vue'
+// import SettingsView from '@/views/SettingsView.vue'
 import ProfileView from '@/views/ProfileView.vue'
 import DeckDetailsView from '@/views/DeckDetailsView.vue'
 import CreateDeckView from '@/views/CreateDeckView.vue';
@@ -30,11 +30,11 @@ const routes = [
   { path: '/about', name: 'AboutView', component: AboutView },
   { path: '/howworks', name: 'HowWorkView', component: HowWorkView },
   { path: '/public', name: 'PublicView', component: PublicView },
-  { path: '/login/home', name: 'HomeAppView', component: HomeAppView },
+  // { path: '/login/home', name: 'HomeAppView', component: HomeAppView },
   { path: '/login/decks', name: 'DecksView', component: DecksView },
   { path: '/login/stadistics', name: 'StadisticsView', component: StadisticsView },
   { path: '/login/help', name: 'HelpView', component: HelpView },
-  { path: '/login/settings', name: 'SettingsView', component: SettingsView },
+  // { path: '/login/settings', name: 'SettingsView', component: SettingsView },
   { path: '/login/profile', name: 'ProfileView', component: ProfileView },
   { path: '/login/decks/:id', name: 'DeckDetailsView', component: DeckDetailsView },
   { path: '/login/decks/:id/create', name: 'CreateDeckView', component: CreateDeckView },
